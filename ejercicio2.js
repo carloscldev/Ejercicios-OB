@@ -5,5 +5,6 @@ function cadena() {
   console.log(texto);
 }
 
-function cadena();
+cadena();
+
 console.log(texto);
