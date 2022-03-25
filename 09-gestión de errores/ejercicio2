@@ -1,0 +1,30 @@
+/* En el mismo archivo del ejercicio anterior ("ejercicio.js"), debes hacer uso de la función suma(a, b) que acabas de crear y proteger tu código para que, intencionadamente, podamos pasar un parámetro que no sea un número sin que salte un error que finalice el programa.
+
+En el catch, puedes poner un mensaje de aviso indicando que ese no es el uso correcto de la función. */
+
+function sumar(a,b) {
+    try {
+       let num1 = 44;
+ 		   let num2 = 'hola';
+    		suma = num1 + num2;  
+      
+        if(isNaN(num1)) {
+        throw Error("El elemento A tiene que ser numérico")
+        }
+        if(isNaN(num2)) {
+        throw Error("El elemento B tiene que ser numérico")
+        }
+        
+
+    } catch (error) {
+      	console.log(`Ha habido un error: ${error}`);
+    }
+    
+ finally {
+  
+    console.log('La suma de los números es: ' +suma);}
+}
+
+
+ sumar();
+	    
